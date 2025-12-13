@@ -1,16 +1,23 @@
 # AI Video Meeting Summarizer
 
-An AI-powered web application that uploads meeting videos, transcribes the conversation with speaker identification, generates concise summaries, and extracts key video clips. The system helps users quickly understand long meetings without watching the entire recording.
+An AI-powered web application that processes videos or YouTube links to generate accurate transcriptions, speaker-wise summaries, and key highlights. The system supports different types of content such as meetings, podcasts, lectures, and interviews, helping users quickly extract insights without watching long videos.
 
 ---
 
 ## Features
 
 - Upload meeting video or audio files
+- Paste YouTube video links directly for processing
+- Supports multiple content types:
+  - Meetings
+  - Podcasts
+  - Lectures
+  - Interviews
 - Automatic speech-to-text transcription
 - Speaker-aware transcription
-- AI-generated meeting summaries
+- AI-generated concise meeting summaries
 - Key moment / highlight clip generation
+- Export generated summary as a PDF
 - Clean and responsive React-based UI
 - FastAPI backend for AI processing
 
@@ -24,24 +31,23 @@ An AI-powered web application that uploads meeting videos, transcribes the conve
 - CSS
 
 ### Backend
-- Python
+-  Python
 - FastAPI
-- OpenAI Whisper
-- MoviePy
-
----
-
+- OpenAI Whisper (speech-to-text)
+- MoviePy (audio/video processing)
 
 ---
 
 ## How It Works
 
-1. User uploads a meeting video through the frontend
-2. Backend extracts audio from the video
-3. Whisper transcribes speech into text
+1. User uploads a video/audio file **or** provides a YouTube link
+2. Backend extracts audio from the source
+3. Whisper model transcribes speech into text
 4. Speaker segments are identified
-5. AI generates a structured summary
-6. Key moments are extracted as short clips
+5. AI generates a structured summary based on the selected content type
+6. Important moments are extracted as short clips
+7. User can download the summary as a PDF
+
 
 ---
 
@@ -54,14 +60,34 @@ An AI-powered web application that uploads meeting videos, transcribes the conve
 
 ---
 
-### Backend Setup
+### Backend Setup (Using Virtual Environment)
 
+#### Step 1: Navigate to backend folder
 ```bash
 cd backend
-pip install -r requirements.txt
-uvicorn main:app --host 0.0.0.0 --port 8000
+```
+#### Step 2: Create virtual environment
+```bash
+python -m venv venv
+```
+#### Step 3: Activate virtual environment 
+Windows (PowerShell):
+```bash
+venv\Scripts\Activate
+```
+Mac/Linux:
+```bash
+source venv/bin/activate
 ```
 
+#### Step 4: Install dependencies
+```bash
+pip install -r requirements.txt
+```
+#### Step 5: Run backend server
+```bash
+uvicorn main:app --host 0.0.0.0 --port 8000  
+```
 ---
 
 ### Frontend Setup
