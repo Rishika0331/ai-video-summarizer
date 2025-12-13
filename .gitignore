@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+
+# Backend generated data
+backend/uploads/
+backend/generated_clips/
+backend/tmpdir_speaker/
+
+# Frontend
+frontend/node_modules/
+dist/
+build/
+
+# Media files
+*.mp4
+*.wav
+*.mp3
+
+# OS
+.DS_Store
