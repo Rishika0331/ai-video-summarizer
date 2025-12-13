@@ -88,7 +88,7 @@ OPENAI_API_KEY=your_api_key_here
 ![Upload Page](screenshots/homePage.png)
 
 ### Speaker-wise Transcription, Summary and Generated Highlight Clips
-![Result Page](screenshots/summaryPage.png)
+![Result Page](screenshots/summaryPage.jpeg)
 
 
 
