@@ -60,6 +60,7 @@ An AI-powered web application that uploads meeting videos, transcribes the conve
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --host 0.0.0.0 --port 8000
+```
 
 ---
 
@@ -69,14 +70,16 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 cd frontend
 npm install
 npm run dev
+```
 
 ---
 
 ### Environment Variables
 
 Create a .env file inside the backend/ folder:
+```bash
 OPENAI_API_KEY=your_api_key_here
-
+```
 ---
 
 ### Screenshots
