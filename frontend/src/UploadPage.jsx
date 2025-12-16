@@ -29,8 +29,8 @@ export default function UploadPage({
 
   return (
     <div className="mm-container upload-page">
-      <img src={logo} alt="MeetingMind Logo" className="mm-logo" />
-      <h1 className="mm-title">MeetingMind</h1>
+      <img src={logo} alt="Summarize.AI Logo" className="mm-logo" />
+      <h1 className="mm-title">Summarize.AI</h1>
 
       <div className="upload-card">
         <div className="upload-inner">
