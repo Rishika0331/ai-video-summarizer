@@ -102,9 +102,10 @@ npm run dev
 
 ### Environment Variables
 
-Create a .env file inside the backend/ folder:
+Create a .env file inside the folder:
 ```bash
-OPENAI_API_KEY=your_api_key_here
+GROQ_API_KEY = your_GROQ_API_KEY_here
+HF_TOKEN = your_HF_TOKEN_here
 ```
 ---
 
